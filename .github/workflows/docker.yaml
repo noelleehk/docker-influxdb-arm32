@@ -2,12 +2,9 @@ name: Build and push docker image
 
 on:
   workflow_dispatch:
-    inputs:
-      message:
-        description: 'Test bool options'
-        required: false
-        type: boolean
   push:
+    branches: 
+      - 'test_manual_workflow'
     tags:
       - '*'
       
